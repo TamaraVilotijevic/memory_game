@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    font-family: 'Black Ops One', system-ui;
+    background-color: rgb(9, 128, 202);
+    color: white;
+}
+
+#clock {
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.usn {
+    margin-bottom: 10px;
+}
+
+#username {
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+#username:focus {
+    outline: none;
+}
+
+button {
+    padding: 5px;
+    background-color: white;
+}
+button:hover {
+    cursor: pointer;
+}
+
+#start {
+    width: 130px;
+    border-radius: 4px;
+    border: 1px solid rgb(9, 128, 202);
+    background-color: rgb(9, 128, 202);
+    color: white;
+    padding: 8px;
+}
+#start:hover {
+    background-color:rgb(29, 136, 203);
+}
+
+.divRadio input{
+    margin: 8px;
+}
+
+input[type="radio"]:checked+label{ 
+    font-weight: bold;
+} 
+
+#cards img {
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px 5px 2px grey;
+    border-radius: 3px;
+    height: auto;
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.levelBtns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.levelBtns button {
+    flex-grow: 1;
+    width: 23%;
+    border-radius: 0%;
+    border: 2px solid rgb(9, 128, 202);
+}
+.levelBtns button:not(:last-child){
+    margin-right: 2px;
+}
+
+.clicked {
+    background-color: rgb(9, 128, 202);
+    color: white;
+}
+
+table {
+    text-align: center;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+th {
+    background-color: rgb(9, 128, 202);
+    color: white;
+}
+
+td, th{
+    border: 2px solid rgb(9, 128, 202);
+    padding: 5px 30px;
+}
+
+.container-left {
+    float: left;
+    padding: 5px;
+}
+
+.container-right {
+    float: right;
+    padding: 5px;
+}
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+@media screen and (max-width: 600px) {
+    .container-left, .container-right {
+        width: 100%;
+    }
+
+    .levelBtns button:nth-child(2){
+        margin-right: 0;
+     }
+
+    .levelBtns button {
+        width: 48%;
+        margin-bottom: 2px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .container-left, .container-right {
+        width: 100%;
+    }
+}
